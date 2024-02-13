@@ -1,0 +1,103 @@
+.wp_animals {
+	width: 32px;
+	height: 32px;
+	background-repeat: no-repeat;
+	position: absolute;
+	z-index: 99999;
+}
+
+.wp_animal_left {
+	animation: wp_anim_left 0.5s steps(3) infinite;
+	-webkit-animation: wp_anim_left 0.5s steps(3) infinite;
+	background-position: 0 -32px;
+}
+
+.wp_animal_right {
+	animation: wp_anim_right 0.5s steps(3) infinite;
+	-webkit-animation: wp_anim_right 0.5s steps(3) infinite;
+	background-position: 0 -64px;
+}
+
+.wp_animal_up {
+	animation: wp_anim_up 0.5s steps(3) infinite;
+	-webkit-animation: wp_anim_up 0.5s steps(3) infinite;
+	background-position: 0 -96px;
+}
+
+.wp_animal_down {
+	animation: wp_anim_down 0.5s steps(3) infinite;
+	-webkit-animation: wp_anim_down 0.5s steps(3) infinite;
+	background-position: 0 0;
+}
+
+@keyframes wp_anim_left {
+	form {
+		background-position: 0px -32px;
+	}
+	to {
+		background-position: -96px -32px;
+	}
+}
+
+@-webkit-keyframes wp_anim_left {
+    form {
+		background-position: 0px -32px;
+	}
+	to {
+		background-position: -96px -32px;
+	}
+} 
+
+@keyframes wp_anim_right {
+	form {
+		background-position: 0px -64px;
+	}
+	to {
+		background-position: -96px -64px;
+	}
+}
+
+@-webkit-keyframes wp_anim_right {
+    form {
+		background-position: 0px -64px;
+	}
+	to {
+		background-position: -96px -64px;
+	}
+} 
+
+@keyframes wp_anim_up {
+	form {
+		background-position: 0px -96px;
+	}
+	to {
+		background-position: -96px -96px;
+	}
+}
+
+@-webkit-keyframes wp_anim_up {
+    form {
+		background-position: 0px -96px;
+	}
+	to {
+		background-position: -96px -96px;
+	}
+} 
+
+@keyframes wp_anim_down {
+	form {
+		background-position: 0px -0px;
+	}
+	to {
+		background-position: -96px 0px;
+	}
+}
+
+@-webkit-keyframes wp_anim_down {
+    form {
+		background-position: 0px 0px;
+	}
+	to {
+		background-position: -96px 0px;
+	}
+} 
